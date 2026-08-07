@@ -1,5 +1,7 @@
 # unirtos-fota-demos
 
+中文 | [English](README.md)
+
 ## 概述
 
 `unirtos-fota-demos` 用于展示 UniRTOS 下 FOTA（Firmware Over-The-Air）能力的整体方案。
