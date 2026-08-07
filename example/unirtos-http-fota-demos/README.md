@@ -44,19 +44,19 @@ unirtos-cli ls-demos
 Create this demo project:
 
 ```bash
-unirtos-cli new -r unirtos-http-fota-demos
+unirtos-cli new -r unirtos-fota-demos
 ```
 
 To specify a version:
 
 ```bash
-unirtos-cli new -r unirtos-http-fota-demos -v 1.0.0
+unirtos-cli new -r unirtos-fota-demos -v 1.0.0
 ```
 
 ### 3. Enter the Project and Build
 
 ```bash
-cd unirtos-http-fota-demos-1.0.0
+cd unirtos-fota-demos-1.0.0/example/unirtos-http-fota-demos
 unirtos-cli env-setup
 unirtos-cli build
 ```

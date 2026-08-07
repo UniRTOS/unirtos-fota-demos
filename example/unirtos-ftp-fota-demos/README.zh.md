@@ -44,19 +44,19 @@ unirtos-cli ls-demos
 创建本 demo 工程：
 
 ```bash
-unirtos-cli new -r unirtos-ftp-fota-demos
+unirtos-cli new -r unirtos-fota-demos
 ```
 
 如需指定版本：
 
 ```bash
-unirtos-cli new -r unirtos-ftp-fota-demos -v 1.0.0
+unirtos-cli new -r unirtos-fota-demos -v 1.0.0
 ```
 
 ### 3. 进入工程并编译
 
 ```bash
-cd unirtos-ftp-fota-demos-1.0.0
+cd unirtos-fota-demos-1.0.0/example/unirtos-ftp-fota-demos
 unirtos-cli env-setup
 unirtos-cli build
 ```
