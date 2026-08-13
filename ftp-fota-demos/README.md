@@ -1,4 +1,4 @@
-# unirtos-http-fota-demos
+# unirtos-ftp-fota-demos
 
 [中文](README.zh.md) | English
 
@@ -6,13 +6,13 @@ This repository is recommended to be used via the unirtos-cli demo workflow to e
 
 ## Feature Description
 
-This demo demonstrates the basic development workflow for HTTP-based FOTA (Firmware Over-The-Air) on UniRTOS, and is suitable as a beginner example for remote firmware delivery and online upgrade development.
+This demo demonstrates the basic development workflow for FTP-based FOTA (Firmware Over-The-Air) on UniRTOS, and is suitable as a beginner example for remote firmware download and upgrade flow development.
 
-- Demonstrates HTTP GET firmware download with response status and content-length parsing
-- Supports fixed-length and chunked transfer modes, and handles first-packet initialization logic
-- Demonstrates writing received packets into FOTA module and tracking total download progress
-- Includes file size capacity check, abnormal response handling, and early-exit protection
-- Easily extensible to resumable download (Range), redirect policy tuning, and enterprise-grade secure upgrade flow
+- Demonstrates activating PDP data connection before FOTA task starts
+- Demonstrates initializing and configuring FTP client context (PDP CID, timeout, credentials, and transfer options)
+- Demonstrates downloading firmware package over FTP and writing data packets into FOTA pipeline
+- Includes result status handling, error logging, and basic retry-friendly control flow
+- Easily extensible to authenticated FTP servers, multi-version rollback strategy, and production-grade upgrade orchestration
 
 ## Quick Start
 
@@ -56,7 +56,7 @@ unirtos-cli new -r unirtos-fota-demos -v 1.0.0
 ### 3. Enter the Project and Build
 
 ```bash
-cd unirtos-fota-demos-1.0.0/example/unirtos-http-fota-demos
+cd unirtos-fota-demos-1.0.0/ftp-fota-demos
 unirtos-cli env-setup
 unirtos-cli build
 ```

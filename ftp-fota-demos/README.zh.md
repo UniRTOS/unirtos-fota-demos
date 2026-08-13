@@ -56,7 +56,7 @@ unirtos-cli new -r unirtos-fota-demos -v 1.0.0
 ### 3. 进入工程并编译
 
 ```bash
-cd unirtos-fota-demos-1.0.0/example/unirtos-ftp-fota-demos
+cd unirtos-fota-demos-1.0.0/ftp-fota-demos
 unirtos-cli env-setup
 unirtos-cli build
 ```
